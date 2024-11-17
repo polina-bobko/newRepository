@@ -1,0 +1,69 @@
+    1  ls -l
+    2  clear
+    3  git --version
+    4  git init
+    5  git add cat.bmp
+    6  git commit -m "Added photo"
+    7  git branch -M main
+    8  git remote add origin git@github.com:polina-bobko/git_intro.git
+    9  git push -u origin main
+   10  git pull
+   11  ls -al
+   12  git init
+   13  git add .
+   14  git status
+   15  git commit -m "Added photo"
+   16  git remote add origin https://github.com/polina-bobko/git_intro.git
+   17  rm -rf .git
+   18  cd ..
+   19  rm -rf .git
+   20  cd git_intro/
+   21  git init
+   22  git add cat.bmp 
+   23  git commit -m "Added photo"
+   24  git remote add origin https://github.com/polina-bobko/git_intro.git
+   25  git branch -M main
+   26  git push -u origin main
+   27  #!/bin/bash
+   28  USER="Polina"
+   29  echo "Today is $(date)"
+   30  echo "Hello $USER!"
+   31  echo "I work from directory $PWD"
+   32  echo "Number of bioset processes is $(ps -ef | grep bioset | grep -v grep | wc -l)"
+   33  echo "Permissions for file /etc/passwd are $(ls -la /etc/passwd | awk '{print $1}')"
+   34  la -la
+   35  ls -la
+   36  git checkout gitignore
+   37  git checkout -b gitignore
+   38  touch .gitignore
+   39  git status
+   40  git add .gitignore 
+   41  git status
+   42  git commit -m "Add file .gitignore"
+   43  git status
+   44  git push
+   45  git push --set-upstream origin gitignore
+   46  git clone https://github.com/polina-bobko/newRepository.git
+   47  touch README.md
+   48  git status
+   49  mv README.md ./newRepository/README.md
+   50  git status
+   51  cd newRepository/
+   52  git status
+   53  git add README.md 
+   54  git commit -m "Add README.md file"
+   55  git push
+   56  git checkout -b feature
+   57  git status
+   58  git add
+   59  git add .
+   60  git commit -m "Modify gitignore file and README file"
+   61  git push
+   62  git push --setupstream origin feature
+   63  git push --set-upstream origin feature
+   64  git commit -amend
+   65  git commit --amend
+   66  git commit --amend
+   67  git checkout main
+   68  git merge feature
+   69  history > history.txt
